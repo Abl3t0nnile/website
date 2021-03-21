@@ -3,6 +3,7 @@ weight: 2
 bookFlatSection: true
 title: "Tutorials"
 bookToc: false
+bookCollapseSection: false
 ---
 
 # Tutorials and Guides
