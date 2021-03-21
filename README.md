@@ -1,2 +1,3 @@
-# website
-The working repository for my githib.io page.
+# A Coding Monkey - Working Repository
+
+This is the working repository of my personal GitHub.io [page](http://abl3t0nnile.github.io). The project is build, using [HUGO](https://gohugo.io) and THEME ...
