@@ -7,7 +7,6 @@ description: "The first entry to this blog. It shares some ideas why I wanted to
 categories: ["thoughts"]
 tags: ["blog", "workflow", "organization"]
 
-menu: "main"
 bookToc: false
 ---
 
