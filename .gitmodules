@@ -1,0 +1,6 @@
+[submodule "code-monkey/themes/book"]
+	path = code-monkey/themes/book
+	url = https://github.com/alex-shpak/hugo-book
+[submodule "code-monkey/public"]
+	path = code-monkey/public
+	url = https://github.com/Abl3t0nnile/abl3t0nnile.github.io.git
