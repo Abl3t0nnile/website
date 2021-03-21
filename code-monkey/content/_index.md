@@ -14,7 +14,7 @@ This is a personal page about computer science, coding and learning to do so. It
 
 {{< figure src="/img/banana.png" width="150px">}}
 
-## [Resources](/docs/languages)
+## [Coding Library](/docs/library)
 
 ---
 

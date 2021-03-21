@@ -9,11 +9,13 @@ weight: 1
 
 # Host a GitHub Page with Hugo
 
-This article is a step-by-step guide to setup a blog page like this one. The tools used for this purpose are HUGO, GitHub with GitHub pages and the command line. At the end of this tutorial I will cover automated post creation and site updates using shell functions. Since I'm using ZSH as my shell - if you're on BASH, these may not work exactly the same for you. But everything else on the command line should work the same on either ZSH or BASH. This tutorial does not cover HUGO installation or basic git usage. If the HUGO commands used in this tutorial work without any error messages you are probably fine.
+This is a brief tutorial on how to set up a [GitHub page](https://pages.github.com) with Hugo as a static content generator. It's a simple and easy solution to maintain a personal website and blog. Especially if your a coder and used to working with git and the command line.
+
+{{< details title="Prerequisites" open=true >}}
 
 {{< hint warning >}}
 
-The following topics are mandatory and won't be covered in this tutorial
+The following topics are mandatory and won't be covered in this tutorial:
 
 * A working installation of Hugo
 * Basic git knowledge
@@ -21,6 +23,8 @@ The following topics are mandatory and won't be covered in this tutorial
 * Markdown syntax
 
 {{< /hint >}}
+
+{{< /details >}}
 
 ## 1 Hugo
 

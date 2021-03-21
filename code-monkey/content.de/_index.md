@@ -14,7 +14,7 @@ Diese persönliche Website beschäftigt sich mit den Themen Informatik, Programm
 
 {{< figure src="/img/banana.png" width="150px">}}
 
-## [Bibliothek](/docs/languages)
+## [Bibliothek](/docs/library)
 
 ---
 

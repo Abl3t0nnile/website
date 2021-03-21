@@ -1,8 +1,9 @@
 ---
 weight: 1
 bookFlatSection: true
-title: "Languages"
+title: "Coding Library"
 bookToc: false
+bookCollapseSection: true
 ---
 
 # Language specific resources
@@ -14,7 +15,7 @@ This folder contains everything coding language related. Since I currently use *
 <div align="center">
 {{< figure src="/img/swift.png" width="150px">}}
 
-## [Swift](/docs/languages/swift)
+## [Swift](/docs/library/swift)
 
 ---
 
@@ -27,7 +28,7 @@ The main programming language for all Apple devices. Although it's also supporte
 <div align="center">
 {{< figure src="/img/python.png" width="150px">}}
 
-## [Python](/docs/languages/python)
+## [Python](/docs/library/python)
 
 ---
 

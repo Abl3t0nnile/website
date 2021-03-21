@@ -18,6 +18,6 @@ Some things have to be done a specific way. This part of the page is home to all
 
 ---
 
-[Setup a site like the one you see](/docs/tutorials/setup_blog.md)
+[Setup a site like the one you see](/docs/tutorials/setup_website.md)
 
 </div>

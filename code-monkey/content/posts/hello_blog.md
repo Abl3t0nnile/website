@@ -18,6 +18,6 @@ A few days ago the idea came to my mind again and I hassled around with wordpres
 
 An easy to setup, easy to maintain, but jet powerful solution for building a webpage from scratch, without any further knowledge on HTML, CSS or SASS. If you know your way around git, github and the command line, it's very simple to get a site like this one up and running in a day.
 
-A detailed tutorial on how to set up a new page like this can be found [here](/docs/tutorials/setup_blog.md)
+A detailed tutorial on how to set up a new page like this can be found [here](/docs/tutorials/setup_website.md)
 
 Since a new blog post is only one line of text in the command line away at any time, it should be easy to maintain this blog in the future an let it be the resource I imagine it to be. Let's see how it goes ...
