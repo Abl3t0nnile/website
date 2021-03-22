@@ -244,8 +244,6 @@ The rendered output looks like this:
 * Aenean sit amet erat nunc
 * Eget porttitor lorem
 
-The HTML looks like this:
-
 ### Ordered
 
 A list of items in which the order of items does explicitly matter.
@@ -362,7 +360,7 @@ Sample text here...
 
 ### Syntax Highlighting
 
-[GFM]^(GitHub Flavored Markdown) also supports syntax highlighting.
+GitHub Flavored Markdown also supports syntax highlighting.
 
 To activate it, simply add the file extension of the language you want to use directly after the first code "fence", <code>```js</code>, and syntax highlighting will automatically be applied in the rendered HTML.
 

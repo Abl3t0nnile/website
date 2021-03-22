@@ -80,7 +80,7 @@ params:
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/Abl3t0nnile/abl3t0nnile.github.io.git
+  BookRepo: https://github.com/Abl3t0nnile/abl3t0nnile.github.io
 
   # Configure the date format used on the pages
   # - In git information
