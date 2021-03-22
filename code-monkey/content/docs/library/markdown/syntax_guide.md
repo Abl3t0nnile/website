@@ -13,9 +13,9 @@ This article offers a sample of basic Markdown syntax that can be used in Hugo c
 
 {{< hint info >}}
 
-This article is a shameful copy of the great [Grav original page](http://learn.getgrav.org/content/markdown).
+This article is a shortened adaption of the great [Grav original page](http://learn.getgrav.org/content/markdown).
 
-Further details on the extended Markdown syntax of [Hugo](hugo_shortcodes.md) and [Books - Theme](books_shortcodes.md) see the corresponding articles.
+For further details on the extended Markdown syntax of [Hugo](hugo_shortcodes.md) and [Books - Theme](books_shortcodes.md) see the corresponding articles.
 
 {{< /hint >}}
 
@@ -46,24 +46,15 @@ Without further delay, let us go over the main elements of Markdown and what the
 
 ## 1 Headings
 
-Headings from `h2` through `h6` are constructed with a `#` for each level:
+Headings from `h1` through `h6` are constructed with a `#` for each level:
 
 ```markdown
+# h1 Heading
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
 ###### h6 Heading
-```
-
-The HTML looks like this:
-
-```html
-<h2>h2 Heading</h2>
-<h3>h3 Heading</h3>
-<h4>h4 Heading</h4>
-<h5>h5 Heading</h5>
-<h6>h6 Heading</h6>
 ```
 
 ## 2 Comments
@@ -97,29 +88,8 @@ ___
 ---
 ***
 
-## 4 Body Copy
 
-Body copy written as normal, plain text will be wrapped with `<p></p>` tags in the rendered HTML.
-
-So this body copy:
-
-```markdown
-Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri,
-animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex,
-soluta officiis concludaturque ei qui, vide sensibus vim ad.
-```
-
-The HTML looks like this:
-
-```html
-<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret
-pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his
-ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
-```
-
-A **line break** can be done with one blank line.
-
-## 5 Inline HTML
+## 4 Inline HTML
 
 If you need a certain HTML tag (with a class) you can simply use HTML:
 
@@ -133,7 +103,7 @@ Paragraph in Markdown.
 Paragraph in Markdown.
 ```
 
-## 6 Emphasis
+## 5 Emphasis
 
 ### Bold
 
@@ -144,12 +114,6 @@ The following snippet of text is **rendered as bold text**.
 ```markdown
 **rendered as bold text**
 __rendered as bold text__
-```
-
-The HTML looks like this:
-
-```html
-<strong>rendered as bold text</strong>
 ```
 
 ### Italics
@@ -163,15 +127,9 @@ The following snippet of text is _rendered as italicized text_.
 _rendered as italicized text_
 ```
 
-The HTML looks like this:
-
-```html
-<em>rendered as italicized text</em>
-```
-
 ### Strikethrough
 
-In [[GFM]^(GitHub flavored Markdown)](https://github.github.com/gfm/) you can do strikethroughs.
+In [GitHub flavored Markdown](https://github.github.com/gfm/), which can be used on this site, you can do strikethroughs.
 
 ```markdown
 ~~Strike through this text.~~
@@ -181,11 +139,6 @@ The rendered output looks like this:
 
 ~~Strike through this text.~~
 
-The HTML looks like this:
-
-```html
-<del>Strike through this text.</del>
-```
 
 ### Combination
 
@@ -208,41 +161,21 @@ The rendered output looks like this:
 
 ~~***bold, italics and strikethrough***~~
 
-The HTML looks like this:
-
-```html
-<em><strong>bold and italics</strong></em>
-<del><strong>strikethrough and bold</strong></del>
-<del><em>strikethrough and italics</em></del>
-<del><em><strong>bold, italics and strikethrough</strong></em></del>
-```
-
-## 7 Blockquotes
+## 6 Blockquotes
 
 For quoting blocks of content from another source within your document.
 
 Add `>` before any text you want to quote:
 
 ```markdown
-> **Fusion Drive** combines a hard drive with a flash storage (solid-state drive) and 
-presents it as a single logical volume with the space of both drives combined.
+> **Fusion Drive** combines a hard drive with a flash storage (solid-state drive) 
+> and presents it as a single logical volume with the space of both drives combined.
 ```
 
 The rendered output looks like this:
 
-> **Fusion Drive** combines a hard drive with a flash storage (solid-state drive) and presents 
-> it as a single logical volume with the space of both drives combined.
-
-The HTML looks like this:
-
-```html
-<blockquote>
-  <p>
-    <strong>Fusion Drive</strong> combines a hard drive with a flash storage (solid-state drive)
-    and presents it as a single logical volume with the space of both drives combined.
-  </p>
-</blockquote>
-```
+> **Fusion Drive** combines a hard drive with a flash storage (solid-state drive) 
+> and presents it as a single logical volume with the space of both drives combined.
 
 Blockquotes can also be nested:
 
@@ -260,7 +193,7 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 >> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
 odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
 
-## 8 Lists
+## 7 Lists
 
 ### Unordered
 
@@ -308,26 +241,6 @@ The rendered output looks like this:
 
 The HTML looks like this:
 
-```html
-<ul>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Integer molestie lorem at massa</li>
-  <li>Facilisis in pretium nisl aliquet</li>
-  <li>Nulla volutpat aliquam velit
-    <ul>
-      <li>Phasellus iaculis neque</li>
-      <li>Purus sodales ultricies</li>
-      <li>Vestibulum laoreet porttitor sem</li>
-      <li>Ac tristique libero volutpat at</li>
-    </ul>
-  </li>
-  <li>Faucibus porta lacus fringilla vel</li>
-  <li>Aenean sit amet erat nunc</li>
-  <li>Eget porttitor lorem</li>
-</ul>
-```
-
 ### Ordered
 
 A list of items in which the order of items does explicitly matter.
@@ -354,34 +267,21 @@ The rendered output looks like this:
 7. Aenean sit amet erat nunc
 8. Eget porttitor lorem
 
-The HTML looks like this:
-
-```html
-<ol>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Integer molestie lorem at massa</li>
-  <li>Facilisis in pretium nisl aliquet</li>
-  <li>Nulla volutpat aliquam velit</li>
-  <li>Faucibus porta lacus fringilla vel</li>
-  <li>Aenean sit amet erat nunc</li>
-  <li>Eget porttitor lorem</li>
-</ol>
-```
 
 {{< hint info >}}
 
-If you just use `1.` for each number, Markdown will automatically number each item. For example:
+If you just use `1.` for each number, Markdown will automatically number 
+each item. For example:
 
 ```markdown
 1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-4. Facilisis in pretium nisl aliquet
-5. Nulla volutpat aliquam velit
-6. Faucibus porta lacus fringilla vel
-7. Aenean sit amet erat nunc
-8. Eget porttitor lorem
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+1. Facilisis in pretium nisl aliquet
+1. Nulla volutpat aliquam velit
+1. Faucibus porta lacus fringilla vel
+1. Aenean sit amet erat nunc
+1. Eget porttitor lorem
 ```
 
 The rendered output looks like this:
@@ -413,7 +313,7 @@ The rendered output looks like this:
 - [ ] Update the website
 - [ ] Contact the media
 
-## 9 Code
+## 8 Code
 
 ### Inline Code
 
@@ -426,15 +326,6 @@ In this example, `<section></section>` should be wrapped as **code**.
 The rendered output looks like this:
 
 In this example, `<section></section>` should be wrapped as **code**.
-
-The HTML looks like this:
-
-```html
-<p>
-  In this example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped with
-  <strong>code</strong>.
-</p>
-```
 
 ### Indented Code
 
@@ -454,19 +345,6 @@ The rendered output looks like this:
     line 2 of code
     line 3 of code
 
-The HTML looks like this:
-
-```html
-<pre>
-  <code>
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-  </code>
-</pre>
-```
-
 ### Block Fenced Code
 
 Use "fences" <code>```</code> to block in multiple lines of code with a language attribute.
@@ -477,20 +355,11 @@ Sample text here...
 ```
 {{< / highlight >}}
 
-The HTML looks like this:
-
-```html
-<pre language-html>
-  <code>Sample text here...</code>
-</pre>
-```
-
 ### Syntax Highlighting
 
 [GFM]^(GitHub Flavored Markdown) also supports syntax highlighting.
 
-To activate it, simply add the file extension of the language you want to use directly after the first code "fence",
-<code>```js</code>, and syntax highlighting will automatically be applied in the rendered HTML.
+To activate it, simply add the file extension of the language you want to use directly after the first code "fence", <code>```js</code>, and syntax highlighting will automatically be applied in the rendered HTML.
 
 For example, to apply syntax highlighting to JavaScript code:
 
@@ -541,10 +410,13 @@ grunt.initConfig({
 ```
 
 {{< hint info >}}
-[Syntax highlighting page](https://gohugo.io/content-management/syntax-highlighting/) in **Hugo** Docs introduces more about syntax highlighting, including highlight shortcode.
+
+[Syntax highlighting page](https://gohugo.io/content-management/syntax-highlighting/) 
+in **Hugo** Docs introduces more about syntax highlighting, including highlight shortcode.
+
 {{< /hint >}}
 
-## 10 Tables
+## 9 Tables
 
 Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.
 
@@ -563,33 +435,6 @@ The rendered output looks like this:
 | data   | path to data files to supply the data that will be passed into templates. |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
-
-The HTML looks like this:
-
-```html
-<table>
-  <thead>
-    <tr>
-      <th>Option</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>data</td>
-      <td>path to data files to supply the data that will be passed into templates.</td>
-    </tr>
-    <tr>
-      <td>engine</td>
-      <td>engine to be used for processing templates. Handlebars is the default.</td>
-    </tr>
-    <tr>
-      <td>ext</td>
-      <td>extension to be used for dest files.</td>
-    </tr>
-  </tbody>
-</table>
-```
 
 {{< details title='' open=true >}}
 
@@ -613,9 +458,9 @@ The rendered output looks like this:
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-{{< details >}}
+{{< /details >}}
 
-## 11 Links {#links}
+## 10 Links {#links}
 
 ### Basic Link
 
@@ -633,14 +478,6 @@ The rendered output looks like this (hover over the link, there is no tooltip):
 
 [Assemble](https://assemble.io)
 
-The HTML looks like this:
-
-```html
-<a href="https://assemble.io">https://assemble.io</a>
-<a href="mailto:contact@revolunet.com">contact@revolunet.com</a>
-<a href="https://assemble.io">Assemble</a>
-```
-
 ### Add a Title
 
 ```markdown
@@ -650,12 +487,6 @@ The HTML looks like this:
 The rendered output looks like this (hover over the link, there should be a tooltip):
 
 [Upstage](https://github.com/upstage/ "Visit Upstage!")
-
-The HTML looks like this:
-
-```html
-<a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a>
-```
 
 ### Named Anchors
 
@@ -682,10 +513,13 @@ Content for chapter one.
 ```
 
 {{< hint tip >}}
-The specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.
+
+The specific placement of the anchor tag seems to be arbitrary. They are placed inline here since 
+it seems to be unobtrusive, and it works.
+
 {{< /hint >}}
 
-## 12 Footnotes
+## 11 Footnotes
 
 Footnotes allow you to add notes and references without cluttering the body of the document. When you create a footnote, a superscript number with a link appears where you added the footnote reference. Readers can click the link to jump to the content of the footnote at the bottom of the page.
 
@@ -708,6 +542,20 @@ This is a footnote with "label"[^label]
 [^1]: This is a digital footnote
 [^label]: This is a footnote with "label"
 
-## 13 Images
+## 12 Images
 
-Images will be embeded using Hugo extended Syntax, because it's much easier to style them this way.
+Images have a similar syntax to links but include a preceding exclamation point.
+
+```markdown
+![Banana](/img/banana.png)
+```
+
+![Banana](/img/banana.png)
+
+or:
+
+```markdown
+![Alt text](/img/monkey.png "The coding Monkey")
+```
+
+![Alt text](/img/monkey.png "The coding Monkey")

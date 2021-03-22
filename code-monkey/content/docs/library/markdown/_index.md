@@ -22,3 +22,48 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 ---
 
 The language is the back bone of this website, since all content is created with it.
+
+<div align="center">
+
+## Important Resources
+
+</div>
+
+---
+
+{{< columns >}}
+
+<div align="center">
+
+
+{{< figure src="/img/guide.png" width="100px">}}
+
+### [Hugo Shortcodes]({{< ref "/hugo_shortcodes.md" >}})
+
+</div>
+
+<--->
+
+<div align="center">
+
+
+{{< figure src="/img/editor.png" width="150px">}}
+
+## [Markdown Syntax]({{< ref "/syntax_guide.md" >}})
+
+</div>
+
+<--->
+
+<div align="center">
+
+
+{{< figure src="/img/doc.png" width="100px">}}
+
+### [Books - Theme Shortcodes]({{< ref "/books_shortcodes.md" >}})
+
+</div>
+
+{{< /columns >}}
+
+
