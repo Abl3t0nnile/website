@@ -121,7 +121,7 @@ This creates a submodule of the desired theme inside our blog repo. If the theme
 
 The configuration of Hugo heavily depends on the theme used. In this article I will cover the configuration of the *Books* theme. Please see the documentation of your chosen theme for further instructions.
 
-#### 3.2.1 Basic configuration
+#### Basic configuration
 
 Hugo is configured using a `config` file in the root directory. It is possible to divide the configuration over multiple files, by using a `config` folder, but this will not be covered in this tutorial. For a more comprehensive guide check the official [documentation](https://gohugo.io/getting-started/configuration/).
 
@@ -164,6 +164,8 @@ theme = theme-name
 {{< /tab >}}
 
 {{< /tabs >}}
+
+#### Theme configuration
 
 Some Hugo themes have extensive configuration options. Book on the other hand is luckily quite simple. The following example shows the complete configuration of this website and is annotated with comments for further details:
 
