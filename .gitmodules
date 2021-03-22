@@ -4,3 +4,7 @@
 [submodule "code-monkey/public"]
 	path = code-monkey/public
 	url = https://github.com/Abl3t0nnile/abl3t0nnile.github.io.git
+[submodule "code-monkey/abl3t0nnile.github.io"]
+	path = code-monkey/abl3t0nnile.github.io
+	url = https://github.com/Abl3t0nnile/abl3t0nnile.github.io.git
+	branch = main
