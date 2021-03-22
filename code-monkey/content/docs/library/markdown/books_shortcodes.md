@@ -13,51 +13,146 @@ This article gives a brief overview about special shortcodes, implemented by the
 
 ## 1 Columns
 
-{{< columns >}} <!-- begin columns block -->
-# Left Content
-Lorem markdownum insigne...
+Columns are the perfect tool for additional page styling. They provide a handy method to combine pictures and text. A good example for this is the homepage of this project. The syntax for this shortcode looks like this:
 
+```markdown
+{{</* columns */>}} <!-- begin columns block -->
+// Content goes here ...
 <---> <!-- magic separator, between columns -->
-
-# Mid Content
-Lorem markdownum insigne...
-
+// Content goes here ...
 <---> <!-- magic separator, between columns -->
+// Content goes here ...
+{{</* /columns */>}}
+```
 
-# Right Content
-Lorem markdownum insigne...
+{{< columns >}}
+
+## Left Block
+
+Here is some text inside the left column.
+
+<--->
+
+## Middle Block
+
+{{< figure src="/img/question.png" width="100px">}}
+
+<--->
+
+## Right Block
+
+Here is some text inside the right column.
+
 {{< /columns >}}
+
+There is no specific limitation to the number of columns used. Like shown in the next example,columns can even be used to realize something like a grid layout.
+
+{{< columns >}}
+
+{{< figure src="/img/video.png" width="250px">}}
+
+<--->
+
+{{< figure src="/img/terminal.png" width="250px">}}
+
+<--->
+
+{{< figure src="/img/doc.png" width="250px">}}
+
+<--->
+
+{{< figure src="/img/banana.png" width="250px">}}
+
+<--->
+
+{{< figure src="/img/git.png" width="250px">}}
+
+<--->
+
+{{< figure src="/img/guide.png" width="250px">}}
+
+<--->
+
+{{< figure src="/img/info.png" width="250px">}}
+
+<--->
+
+{{< figure src="/img/check.png" width="250px">}}
+
+{{< /columns >}}
+
+
 
 ## 2 Details
 
-{{< details title="Title" open=true >}}
-## Markdown content
-Lorem markdownum insigne...
+The `details` shortcode is used to highlight content. It provides a caption to the block and makes the content expandable. The behavior can configured with arguments. The basic syntax is the following:
+
+```markdown
+{{</* details title="Title" open=true */>}}
+// Content goes here ...
+{{</* /details */>}}
+```
+
+This a rendered example:
+
+{{< details title="Expanded detail box" open=true >}}
+
+This is something I want to highlight!
+
+{{< /details >}}
+
+A closed one looks like this:
+
+{{< details title="Folded detail box" open=false >}}
+
+This is something not so important you can look up.
+
 {{< /details >}}
 
 ## 3 Hints
 
+Hints are a good way to highlight content as either a coloroed `warning`, `danger` or `info` box. The basic syntax is:
+
+```markdown
+{{</* hint type */>}}
+// Content goes here ...
+{{</* /hint */>}}
+```
+
+The rendered options look like this:
+
 {{< hint info >}}
-**Markdown content**  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+**This is an Info**  
+This is some thing I want to point out.
 {{< /hint >}}
 
 {{< hint warning>}}
-**Markdown content**  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+**This is a Warning!**  
+Be aware of the following ... Spoilers ahead!
 {{< /hint >}}
 
 {{< hint danger >}}
-**Markdown content**  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+**Danger!!!**  
+Don't do the following, or the application will crash!
 {{< /hint >}}
 
 ## 4 Tabs
 
-{{< tabs "uniqueid" >}}
+Sometimes content has to be ordered into different categories. A good example is different use cases in terms of operating systems. Create a tab box with the following syntax:
+
+```markdown
+{{</* tabs uniqueid */>}}
+
+{{</* tab name >*/}} 
+// Tab Content ... 
+{{</* /tab */>}}
+
+{{</* /tabs */>}}
+```
+
+A rendered example looks like this:
+
+{{< tabs "operatinSystems" >}}
 
 {{< tab "MacOS" >}} 
 

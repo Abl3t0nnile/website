@@ -6,8 +6,13 @@ bookToc: true
 # bookHidden: false
 # bookCollapseSection: false
 ---
+<div align="center">
 
 # Markdown Syntax Guide
+
+---
+
+</div>
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files.
 
