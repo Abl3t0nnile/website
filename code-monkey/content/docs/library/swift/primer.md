@@ -38,7 +38,7 @@ Swift comes with all sorts of operators already build in. A lot of these standar
 This operator is used to assign values to variables, constants or properties.
 
 ```swift
-var myString = „This is a string“
+var myString = "This is a string"
 ```
 
 ### Arithmetic operators

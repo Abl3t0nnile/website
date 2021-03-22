@@ -2,6 +2,8 @@
 
 baseURL: https://abl3t0nnile.github.io/
 title: a Coding Monkey
+author: Gregor Minnemann
+keywords: ["personal", "coding", "computer science", "swift", "python", "markdown", "blog", "abl3t0nnile"]
 theme: book
 
 # Book configuration

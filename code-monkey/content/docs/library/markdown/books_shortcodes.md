@@ -143,9 +143,9 @@ Sometimes content has to be ordered into different categories. A good example is
 ```markdown
 {{</* tabs uniqueid */>}}
 
-{{</* tab name >*/}} 
+{{</* tab name >}}
 // Tab Content ... 
-{{</* /tab */>}}
+{{< /tab */>}}
 
 {{</* /tabs */>}}
 ```
