@@ -289,15 +289,80 @@ params:
 
 {{< /details >}}
 
-Now, that our site is configured, we can now take a first look. To test a page in Hugo, simply type `hugo server` into the command line, while in the project directory. Hugo now creates the website and runs it on a local host. The address will be shown in the command line. As long as you keep the server running, hugo will update the site on every change we make to the code.
+Now, that our site is configured, we can now take a first look. To test a page in Hugo, simply type `hugo server` into the command line, while in the project directory. Hugo now creates the website and runs it on a local host. The address will be shown in the command line. As long as we keep the server running, hugo will update the site on every change we make to the code.
 
 Although it's empty our page is now complete. All we have to do, is create some content and push the changes to our production repo.
 
----
-
 ## 4 Content management
 
-To be continued ...
+Content management and thus creation again depends heavily on the chosen theme. Most Hugo themes are build for one page designs or blogging purpose and don't need a special file system to organize content. Since *Hugo Books* is a theme aimed at building documentation pages for software projects, it offers a lot more options for content management. I will cover the specifics to this theme in a different article and limit this article to the common basics.
+
+### 4.1 Front matter
+
+Front matter is a tool within Hugo, to associate metadata with a content file, directly from that files header. It is used to store and read important information on the document itself. The title, category, tags or date of publication are good examples for data you want to provide inside a documents front matter. As with most configuration in Hugo, front matter can be written in different formats.
+
+The following examples shows the syntax of front matter headers and are taken from the official Hugo documentation.
+
+{{< tabs "Front matter syntax" >}}
+{{< tab ".yaml" >}}
+
+#### YAML Syntax
+
+This a basic example of a front matter written in .yaml.
+
+```yaml
+---
+categories:
+- Development
+project_url: https://github.com/gohugoio/hugo
+series:
+- Go Web Dev
+slug: hugo
+tags:
+- Development
+- Go
+- fast
+- Blogging
+title: 'Hugo: A fast and flexible static site generator'
+---
+```
+
+{{< /tab >}}
+{{< tab ".toml" >}}
+
+#### TOML Syntax
+
+This is a basic example of front matter syntax written in .toml.
+
+```toml
++++
+categories = ["Development"]
+project_url = "https://github.com/gohugoio/hugo"
+series = ["Go Web Dev"]
+slug = "hugo"
+tags = ["Development", "Go", "fast", "Blogging"]
+title = "Hugo: A fast and flexible static site generator"
++++
+```
+
+{{< /tab>}}
+{{< /tabs >}}
+
+### 4.2 File structure
+
+Everything you see on a page setup with hugo, lives in the `/content` folder inside the projects root directory. This contains then a collection of content files or sub folders, to further categorize the content.
+
+Most Hugo sites provide blogging capabilities. Each post in the blog lives inside the `/posts` folder inside the `/content` folder. Another common place to store content is the `/docs` folder, which also lives inside `/content`. Documents can either be named themselves or stored in a named folder. The latter options needs the files ALL be named `index.md`.
+
+### 4.3 Taxonomies
+
+By default, Hugo uses so called taxonomies, to manage content. The official documentation says: *Taxonomies are classifications of logical relationships between content.* In the official examples they are used, to implement a Movie database, with standardized metadata, about actors, director, genre, etc. for each movie.
+
+Basically taxonomies can be seen as categories for your content, and most of the blogging templates will provide a TOC with links to all taxonomies used on the site. The two basic taxonomies, which work out of the box are `category` and `tag`. If we where to write an article for our blog, we would then give it a category e.g. `coding` and provide some tags e.g. `python`, `web-app` and `flask`. The taxonomies of any document are specified in its front matter.
+
+### 4.4 Adding posts
+
+...
 
 ## 5 Publication
 
