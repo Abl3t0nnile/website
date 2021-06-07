@@ -35,16 +35,16 @@ markup:
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
 
-#defaultContentLanguage: en
+defaultContentLanguage: de
 
 languages:
-  en:
-    languageName: English
-    contentDir: content
-    weight: 1
   de:
     languageName: German
     contentDir: content.de
+    weight: 1
+  en:
+    languageName: English
+    contentDir: content
     weight: 2
 
 menu:
